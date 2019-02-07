@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+---
+
+<header>
+  <h1>BibleTrainer</h1>
+  <a href="#download">Download Now</a>
+
+  <div>
+    <h2>Let the word <span>dwell in you richly</span></h2>
+  </div>
+
+  <div>
+    <h2>Download now for iOS and Android</h2>
+    <a href="{{ metadata.appStoreUrl }}" class="dlBtn dlBtn--ios">Download for iOS on the AppStore</a>
+    <a href="{{ metadata.playStoreUrl }}" class="dlBtn dlBtn--ios">Download for Android on the Play Store</a>
+  </div>
+</header>
+
+<section class="btQuote">
+  <blockquote cite="https://www.desiringgod.org/books/when-i-dont-desire-god">
+    I spend this much time on Bible memory because I believe in the power of the indwelling Word of God to solve a thousand problems before they happen, and to heal a thousand wounds after they happen, and to kill a thousand sins in the moment of temptation, and to sweeten a thousand days with the ‘drippings of the honeycomb’.
+  </blockquote>
+
+  <cite><span>John Piper<span> When I Don't Desire God</cite>
+</section>
+
+<section class="btFeatures" id="features">
+  <h1>Memorisation</h1>
+  <ul>
+    {% for feature in features %}
+    <li class="btFeatures__feature">
+      <h2>
+        {{ feature.title }}
+        {% if feature.tag %}
+          <span class="btFeatures__feature__tag">
+          {{ feature.tag }}
+          </span>
+        {% endif %}
+      </h2>
+      <p>{{ feature.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="btDownload" id="download">
+  <h1>Start memorising now</h1>
+  <p>BibleTrainer is free</p>
+  <a href="{{ metadata.appStoreUrl }}" class="dlBtn dlBtn--ios">Download for iOS on the AppStore</a>
+  <a href="{{ metadata.playStoreUrl }}" class="dlBtn dlBtn--ios">Download for Android on the Play Store</a>
+</section>
+
+<footer>
+</footer>

@@ -1,0 +1,23 @@
+{
+  "name": "bible-trainer-marketing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp build & gulp watch & gulp serve",
+    "build": "gulp build"
+  },
+  "author": "James Doc",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.5.2",
+    "gulp": "^4",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-serve": "^1.4.0",
+    "gulp-shell": "^0.6.5",
+    "luxon": "^1.3.3",
+    "require-dir": "^1.0.0"
+  },
+  "dependencies": {}
+}
