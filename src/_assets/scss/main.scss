@@ -1,0 +1,168 @@
+$c-teal: #206d73;
+$c-darkTeal: #082c2f;
+$c-white: #ffffff;
+$c-grey: #c0bfbe;
+
+@import 'reboot';
+@import 'downloadButtons';
+@import 'header';
+
+.btMast {
+  background: $c-darkTeal;
+  background: linear-gradient(to bottom, $c-teal 0%,$c-darkTeal 100%);
+  color: $c-white;
+
+  .container {
+    margin: 0 50%;
+    max-width: 512px;
+    padding: 50px 12px;
+    position: relative;
+    width: 50%;
+
+    &:before {
+      background-image: url("/_assets/img/singlePhone.png");
+      background-size: cover;
+      content: "";
+      height: 650px;
+      left: -500px;
+      position: absolute;
+      top: 125px;
+      width: 323px;
+    }
+  }
+
+  &__headline {
+    font-size: 44px;
+    line-height: 44px;
+    span {
+      display: block;
+      font-size: 55px;
+      font-weight: normal;
+      text-transform: lowercase;
+    }
+  }
+
+  &__download {
+    margin-top: 100px;
+
+    h2 {
+      color: $c-grey;
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 10px;
+      text-transform: none;
+    }
+  }
+}
+
+.btQuote {
+  .container {
+    margin: 0 0 0 50%;
+    max-width: 512px;
+    padding: 50px 12px;
+    width: 50%;
+  }
+
+  blockquote {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-right: 175px;
+    position: relative;
+
+    &:after {
+      background-image: url('/_assets/img/piper.png');
+      background-size: cover;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 150px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 150px;
+    }
+  }
+
+  cite {
+    font-style: normal;
+
+    span {
+      display: block;
+      font-weight: bold;
+    }
+  }
+}
+
+.btFeatures {
+
+  .container {
+    margin: 0 50% 0 auto;
+    max-width: 500px;
+    padding: 50px 12px;
+    position: relative;
+    width: 50%;
+
+    &:after {
+      background-image: url("/_assets/img/phones.png");
+      background-size: cover;
+      content: "";
+      height: 400px;
+      position: absolute;
+      right: -400px;
+      top: 125px;
+      width: 320px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__feature {
+    h2 {
+      display: flex;
+    }
+
+    &__tag {
+      background-color: $c-teal;
+      border-radius: 5px;
+      color: $c-white;
+      font-size: 12px;
+      margin-left: 5px;
+      padding: 5px;
+    }
+  }
+}
+
+.btDownload {
+  background-image: url('/_assets/img/footBackground.jpg');
+  background-size: cover;
+  color: $c-white;
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+  }
+
+  p {
+    font-size: 32px;
+    margin: 0 0 50px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
