@@ -17,8 +17,7 @@ layout: layouts/base.njk
 
     <div class="btMast__download">
       <h2>Download now for iOS and Android</h2>
-      <a href="{{ metadata.appStoreUrl }}" class="dlBtn dlBtn--ios">Download for iOS on the AppStore</a>
-      <a href="{{ metadata.playStoreUrl }}" class="dlBtn dlBtn--android">Download for Android on the Play Store</a>
+      {% include "_appLinks.njk" %}
     </div>
   </div>
 </section>
@@ -58,10 +57,7 @@ layout: layouts/base.njk
   <div class="container">
     <h1>Start memorising now</h1>
     <p>BibleTrainer is free</p>
-    <div>
-      <a href="{{ metadata.appStoreUrl }}" class="dlBtn dlBtn--ios">Download for iOS on the AppStore</a>
-      <a href="{{ metadata.playStoreUrl }}" class="dlBtn dlBtn--android">Download for Android on the Play Store</a>
-    </div>
+    {% include "_appLinks.njk" %}
   </div>
 </section>
 
