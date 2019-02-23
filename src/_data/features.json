@@ -14,6 +14,10 @@
   {
     "title": "Emoji",
     "description": "Some learn by reading, others are more visual. Enable emoji mode to add images to help you remember.",
-    "tag": "Coming soon"
+    "tag": "New"
+  },
+  {
+    "title": "Search",
+    "description": "Find passages throughout the Bible that match phrases and ideas."
   }
 ]
