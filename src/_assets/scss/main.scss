@@ -93,7 +93,7 @@ $c-grey: #c0bfbe;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
-    padding-right: 175px;
+    padding-right: 100px;
     position: relative;
 
     &:after {
@@ -102,11 +102,20 @@ $c-grey: #c0bfbe;
       border-radius: 50%;
       content: '';
       display: block;
-      height: 150px;
+      height: 75px;
       position: absolute;
       right: 0;
       top: 10px;
-      width: 150px;
+      width: 75px;
+    }
+
+    @media (min-width: 500px) {
+      padding-right: 175px;
+
+      &:after {
+        height: 150px;
+        width: 150px;
+      }
     }
   }
 
