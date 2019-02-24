@@ -132,18 +132,33 @@ $c-grey: #c0bfbe;
 .btFeatures {
 
   .container {
+
+    padding: 225px 12px 0;
     position: relative;
-    padding: 0 200px 0 12px;
+
+    @media (min-width: 500px) {
+      padding: 0 200px 0 12px;
+    }
 
     &:after {
       background-image: url("/_assets/img/phones.png");
-      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 80% auto;
+      border-bottom: 3px solid #0a3336;
       content: "";
-      position: absolute;
       height: 200px;
-      width: 160px;
-      right: 10px;
-      top: 65px;
+      top: 0;
+      width: calc(100% - 20px);
+      position: absolute;
+
+      @media (min-width: 500px) {
+        background-size: cover;
+        border-bottom: none;
+        height: 200px;
+        width: 160px;
+        right: 10px;
+        top: 65px;
+      }
     }
 
     @media (min-width: 1000px) {
