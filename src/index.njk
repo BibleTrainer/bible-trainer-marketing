@@ -37,7 +37,7 @@ layout: layouts/base.njk
     <h1>Memorisation</h1>
     <ul>
       {% for feature in features %}
-      <li class="btFeatures__feature">
+      <li class="btFeatures__feature" id="feature-{{ feature.title | slug }}">
         <h2>
           {{ feature.title }}
           {% if feature.tag %}
