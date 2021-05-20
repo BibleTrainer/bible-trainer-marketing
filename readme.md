@@ -1,5 +1,7 @@
 # BibleTrainer
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8abe8e74-6d22-49ef-be97-1c01baa6b0bd/deploy-status)](https://app.netlify.com/sites/bibletrainer/deploys)
+
 Marketing site for [BibleTrainer](https://www.bibletrainer.co.uk).
 
 ## Dev
