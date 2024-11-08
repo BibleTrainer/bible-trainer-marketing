@@ -8,13 +8,14 @@
     "watch:sass": "sass --watch src/_assets/scss:dist/_assets/css",
     "build:11ty": "ELEVENTY_ENV=production eleventy",
     "build:sass": "sass src/_assets/scss:dist/_assets/css",
-    "dev": "npm run watch:11ty & npm run watch:sass",
-    "build": "npm run build:11ty && npm run build:sass"
+    "dev": "concurrently npm:watch:11ty npm:watch:sass",
+    "build": "concurrently npm:build:11ty npm:build:sass"
   },
   "author": "James Doc",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
+    "concurrently": "^9.1.0",
     "sass": "^1.80.6"
   }
 }

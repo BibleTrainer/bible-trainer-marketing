@@ -1,6 +1,6 @@
 const { buildSrc, buildDest } = require('./paths');
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/_assets/img");
 
