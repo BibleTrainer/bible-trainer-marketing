@@ -1,11 +1,7 @@
-$c-teal: #206d73;
-$c-darkTeal: #082c2f;
-$c-white: #ffffff;
-$c-grey: #c0bfbe;
-
-@import 'reboot';
-@import 'downloadButtons';
-@import 'header';
+@use 'vars' as *;
+@use 'reboot';
+@use 'downloadButtons';
+@use 'header';
 
 .btMast {
   background: $c-darkTeal;
