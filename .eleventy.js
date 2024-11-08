@@ -1,9 +1,10 @@
-const { DateTime } = require("luxon");
 const { buildSrc, buildDest } = require('./paths');
 
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/_assets/img");
+
+  eleventyConfig.addWatchTarget("./src/_assets");
 
   return {
     templateFormats: ["html", "njk", "md"],

@@ -9,7 +9,7 @@ $c-grey: #c0bfbe;
 
 .btMast {
   background: $c-darkTeal;
-  background: linear-gradient(to bottom, $c-teal 0%,$c-darkTeal 100%);
+  background: linear-gradient(to bottom, $c-teal 0%, $c-darkTeal 100%);
   color: $c-white;
 
   .container {
@@ -220,6 +220,7 @@ $c-grey: #c0bfbe;
   .container {
     display: flex;
     flex-direction: column;
+
     @media (min-width: 1000px) {
       min-height: 500px;
     }

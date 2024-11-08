@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy --serve & mix watch",
-    "build": "ELEVENTY_ENV=production eleventy && mix --production"
+    "watch:11ty": "ELEVENTY_ENV=development eleventy --serve",
+    "watch:sass": "sass --watch src/_assets/scss:dist/_assets/css",
+    "build:11ty": "ELEVENTY_ENV=production eleventy",
+    "build:sass": "sass src/_assets/scss:dist/_assets/css",
+    "dev": "npm run watch:11ty & npm run watch:sass",
+    "build": "npm run build:11ty && npm run build:sass"
   },
   "author": "James Doc",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "laravel-mix": "^6.0.49",
-    "luxon": "^3.5.0",
-    "resolve-url-loader": "^3.1.5",
-    "sass": "^1.80.6",
-    "sass-loader": "^16.0.3"
+    "sass": "^1.80.6"
   }
 }
